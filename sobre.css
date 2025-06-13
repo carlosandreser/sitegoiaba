@@ -1,0 +1,62 @@
+/*
+---
+CSS para a Página Sobre Nós (sobre.css)
+---
+*/
+
+.destaque-sobre {
+    font-size: 1.1em;
+    margin-bottom: 25px;
+    padding: 20px;
+    background-color: #888d92;
+    border-left: 5px solid var(--cor-secundaria);
+    border-radius: 0 5px 5px 0;
+}
+
+.missao-visao-valores {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.card-info {
+    flex: 1;
+    min-width: 280px;
+    padding: 25px;
+    background-color: #8d98a3;
+    border-radius: 8px;
+    border: 1px solid #e9ecef;
+    box-shadow: 0 4px 10px rgba(236, 0, 0, 0.05);
+}
+
+.card-info i {
+    color: var(--cor-primaria);
+    margin-bottom: 15px;
+}
+
+.card-info h2 {
+    font-size: 1.4em;
+}
+
+.valores-lista {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.valores-lista li {
+    padding-left: 25px;
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.valores-lista li::before {
+    content: '✔';
+    color: var(--cor-secundaria);
+    position: absolute;
+    left: 0;
+    font-weight: bold;
+}

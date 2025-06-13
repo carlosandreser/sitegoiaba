@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Lanternagem GP Pintura</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="contato.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-cabecalho">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="/img/logo.png" alt="Logo Lanternagem GP Pintura" class="logo-img">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="servicos.html">Serviços</a></li>
+                    <li><a href="galeria.html">Galeria</a></li>
+                    <li><a href="sobre.html">Sobre Nós</a></li>
+                    <li><a href="contato.html" class="active">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <h1>Fale Conosco</h1>
+        <p>Estamos prontos para atender você! Escolha seu canal preferido abaixo para orçamentos, dúvidas ou agendamentos.</p>
+
+        <div class="contato-container">
+
+            <div class="contato-formulario">
+                <h2>Envie uma Mensagem</h2>
+                <form action="https://formspree.io/f/xjkrgzbg" method="POST">
+                    <div class="form-group">
+                        <label for="nome">Seu Nome:</label>
+                        <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Seu E-mail:</label>
+                        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="mensagem">Sua Mensagem:</label>
+                        <textarea id="mensagem" name="message" rows="6" placeholder="Escreva aqui sua dúvida ou solicitação de orçamento..." required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-enviar">Enviar Mensagem</button>
+                </form>
+            </div>
+
+            <div class="contato-info">
+                <h2>Outras Formas de Contato</h2>
+                
+                <div class="contato-canais">
+                    <a href="https://whatsss.link/jx6wku" class="btn-contato whatsapp" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-whatsapp"></i> Conversar pelo WhatsApp
+                    </a>
+                    <a href="https://www.instagram.com/sragdouglas?igsh=MXc5d3NpNWhkYXN5MQ==" class="btn-contato instagram" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-instagram"></i> Visite nosso Instagram
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Lanternagem GP Pintura.</p>
+        <p>Qr 402 conj13, casa11, Samambaia Norte | Telefone: (61) 99275-6446</p>
+    </footer>
+</body>
+</html>

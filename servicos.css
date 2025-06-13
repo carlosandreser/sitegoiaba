@@ -1,0 +1,50 @@
+/*
+---
+CSS para a Página de Serviços (servicos.css)
+---
+*/
+
+.servico-bloco {
+    margin-bottom: 35px;
+    padding: 30px;
+    background-color: var(--cor-branca);
+    border: 1px solid #107ae4;
+    border-left: 5px solid var(--cor-secundaria);
+    border-radius: 8px;
+    transition: transform 0.3s ease-out, box-shadow 0.3s ease-out;
+}
+
+.servico-bloco:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 25px rgba(192, 192, 192, 0.1);
+}
+
+.servico-bloco h2 {
+    border-bottom: 2px solid var(--cor-primaria);
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-size: 1.6em;
+}
+
+.servico-bloco ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.servico-bloco ul li {
+    margin-bottom: 12px;
+    padding-left: 25px;
+    position: relative;
+    line-height: 1.6;
+}
+
+.servico-bloco ul li::before {
+    content: '✓';
+    color: var(--cor-secundaria);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    font-size: 1.1em;
+}
