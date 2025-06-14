@@ -2,15 +2,18 @@
 ---
 ARQUIVO DE ESTILO PRINCIPAL (style.css)
 ---
+Paleta de Cores Atualizada para Lanternagem e Pintura
 */
 
 /* 1. CONFIGURAÇÕES GERAIS E NOVA PALETA DE CORES */
 :root {
-  --cor-primaria: #0A2B4C; /* Azul Marinho Corporativo */
-  --cor-secundaria: #C5B358; /* Dourado Sofisticado para detalhes */
-  --cor-fundo: #000000;      /* Cinza claro para o fundo */
-  --cor-texto: #ffeeee;      /* Cinza escuro para texto (melhor que preto puro) */
-  --cor-branca: #000000;
+  /* Paleta "Profissionalismo e Tecnologia" */
+  --cor-grafite-escuro: #2f3640;   /* Cor principal para títulos, menus e rodapé */
+  --cor-amarelo-destaque: #FFC312; /* Cor de ação para botões e links importantes */
+  --cor-fundo-claro: #f5f6fa;      /* Fundo suave e profissional */
+  --cor-texto-principal: #333333;  /* Texto principal com ótima legibilidade */
+  --cor-cinza-medio: #718093;      /* Para textos secundários, bordas e detalhes */
+  --cor-branca: #FFFFFF;           /* Branco puro para texto em fundos escuros e áreas de destaque */
 
   --fonte-principal: 'Helvetica', 'Arial', sans-serif;
 }
@@ -19,8 +22,8 @@ body {
   font-family: var(--fonte-principal);
   margin: 0;
   padding: 0;
-  background-color: var(--cor-fundo);
-  color: var(--cor-texto);
+  background-color: var(--cor-fundo-claro);
+  color: var(--cor-texto-principal);
   box-sizing: border-box;
 }
 
@@ -29,18 +32,18 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: var(--cor-primaria);
+  color: var(--cor-grafite-escuro);
   font-weight: 700;
 }
 
 a {
   text-decoration: none;
-  color: var(--cor-secundaria);
+  color: var(--cor-amarelo-destaque);
   transition: color 0.3s ease;
 }
 
 a:hover {
-  color: var(--cor-primaria);
+  color: var(--cor-grafite-escuro);
 }
 
 /* 2. LAYOUT PRINCIPAL E CONTAINER */
@@ -63,13 +66,13 @@ main > p { /* Parágrafo introdutório de cada página */
     font-size: 1.1em;
     max-width: 750px;
     margin: 0 auto 50px auto;
-    color: #e2e2e2;
+    color: var(--cor-cinza-medio); /* Alterado de cor fixa para variável */
 }
 
 /* 3. CABEÇALHO E NAVEGAÇÃO */
 header {
-  background-color: var(--cor-branca);
-  border-bottom: 1px solid #b31a1a;
+  background-color: var(--cor-branca); /* Fundo branco para destaque */
+  border-bottom: 1px solid #e0e0e0; /* Borda sutil em vez de vermelha */
   padding: 15px 0;
   position: sticky;
   top: 0;
@@ -104,7 +107,7 @@ nav ul {
 }
 
 nav a {
-  color: #555;
+  color: var(--cor-texto-principal); /* Alterado de cor fixa para variável */
   font-weight: bold;
   padding: 10px 5px;
   position: relative;
@@ -112,7 +115,7 @@ nav a {
 }
 
 nav a:hover, nav a.active {
-  color: var(--cor-primaria);
+  color: var(--cor-amarelo-destaque); /* Destaque ao passar o mouse */
 }
 
 nav a::after {
@@ -123,7 +126,7 @@ nav a::after {
   display: block;
   bottom: -5px;
   left: 50%;
-  background: var(--cor-secundaria);
+  background: var(--cor-amarelo-destaque);
   transition: width 0.3s ease, left 0.3s ease;
 }
 
@@ -134,8 +137,8 @@ nav a:hover::after, nav a.active::after {
 
 /* 4. RODAPÉ */
 footer {
-  background-color: var(--cor-primaria);
-  color: var(--cor-branca);
+  background-color: var(--cor-grafite-escuro); /* Cor principal escura */
+  color: var(--cor-fundo-claro); /* Texto claro para contraste */
   text-align: center;
   padding: 25px 0;
   margin-top: 40px;
@@ -143,13 +146,13 @@ footer {
 
 footer p {
     margin: 5px 0;
-    color: #0e0c0c;
+    color: inherit; /* Herda a cor do footer, garantindo contraste */
 }
 
 /* 5. BOTÕES PADRÃO */
 .btn {
-  background-color: var(--cor-secundaria);
-  color: var(--cor-branca);
+  background-color: var(--cor-amarelo-destaque);
+  color: var(--cor-grafite-escuro); /* Texto escuro para legibilidade no amarelo */
   padding: 15px 30px;
   border-radius: 5px;
   text-decoration: none;
@@ -158,12 +161,13 @@ footer p {
   border: 2px solid transparent;
   transition: all 0.3s ease;
   cursor: pointer;
+  text-transform: uppercase; /* Adicionado para mais impacto */
 }
 
 .btn:hover {
-  background-color: #e6c300; /* Tom mais escuro do dourado */
+  background-color: #e0ac00; /* Tom mais escuro do amarelo para hover */
   transform: translateY(-3px);
-  box-shadow: 0 4px 10px rgba(182, 35, 35, 0.2);
+  box-shadow: 0 4px 10px rgba(255, 195, 18, 0.4); /* Sombra da cor de destaque */
 }
 
 /* 6. RESPONSIVIDADE GERAL */
